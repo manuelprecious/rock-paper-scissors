@@ -11,7 +11,8 @@ let getComputerChoice = ()=>{
     }
 }
 
-
+let computerCount = "";
+let playerCount = "";
 let playRound = (playerSelection, computerSelection)=>{
     if(playerSelection.toLowerCase()===computerSelection.toLowerCase()){
         console.log(computerSelection);
@@ -22,5 +23,12 @@ let playRound = (playerSelection, computerSelection)=>{
     }
 }
 
-let playerText = "pApeR";
-playRound(playerText, getComputerChoice());
+let playerText = prompt("Rock, Paper or Scissors");
+
+let game = playtimes=>{
+    for (let i = 1; i < 5; i++){
+        console.log(playtimes)
+    }
+}
+
+console.log(game(playRound(playerText, getComputerChoice())));
